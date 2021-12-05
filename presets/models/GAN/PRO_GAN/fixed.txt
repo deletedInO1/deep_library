@@ -1,0 +1,4 @@
+WSConv2d: Fehler in der Formel für scale
+WSConv2d: Fehler in forward pass
+Generator: Add tanh in fade in
+Discriminator: Add leaky relu, remove linear
