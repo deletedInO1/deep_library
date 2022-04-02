@@ -20,12 +20,14 @@ class Trainable(abstract.ABC):
         self.test(training)
         train_results = None
         for epoch in range(training.num_epochs):
+            print("Epoche:", epoch+1)
             l = self.train_epoch(training, epoch + 1)
             losses.append(l)
             if len(losses) > loss_count:
                 losses = list(losses[-loss_count:])
 
             train_results = self.test(training)
+            print(train_results.get_accuracy())
             if trial is not None:
                 self.report_optuna(trial, train_results, epoch)
                 if trial.should_prune():

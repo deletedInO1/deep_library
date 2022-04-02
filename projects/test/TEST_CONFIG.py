@@ -1,4 +1,0 @@
-DATASET_LOCATION = "dataset/"
-MNIST_LOCATION = DATASET_LOCATION + "mnist/"
-HORSE_LOCATION = DATASET_LOCATION + "horses/"
-TO_ROOT = "../" # form test script to TEST_CONFIG.py
